@@ -51,7 +51,6 @@ update=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$zone_identi
 
 
 if [ "$update" != "${update%success*}" ] || [ "$(echo $update | grep "\"success\": true")" != "" ]; then
-  echo "Updated succesfuly!"
   echo "$ip" > $ip_file
   message="$record_name IP changed to: $ip"
   log "$message"
