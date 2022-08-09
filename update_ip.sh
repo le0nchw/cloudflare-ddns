@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# CHANGE THESE
 auth_email=${1}
 auth_key=${2}
 zone_name=${3}
