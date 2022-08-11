@@ -13,7 +13,7 @@ mkdir -p $zone_name/$record_name
 # DECLARE LOG FILES
 ip_file="$zone_name/$record_name/ip"
 id_file="$zone_name/$record_name/ids"
-log_file="/log"
+log_file="log"
 
 
 
